@@ -15,6 +15,7 @@ const TopNavbar = ({ showBorderBottom = true }: IProps) => {
 
     return (
         <header>
+            {/* fixed w-screen top-0 z-50 bg-primaryVariantOne */}
             <nav className={`px-[54px] py-7 flex items-center justify-between ${showBorderBottom && 'border-b border-b-slate-800'} md:px-[38px] lg:px-[128px]`}>
                 <Logo />
                 <img src={menuIcon} alt='menu-icon' className="cursor-pointer md:hidden" onClick={() => setShowMenubar(!showMenubar)} />
@@ -29,10 +30,8 @@ const TopNavbar = ({ showBorderBottom = true }: IProps) => {
                                 }
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    // alert(location.pathname);
                                     (location.pathname === '/contact' && path !== '/contact') ? navigate('/') : path !== '/contact' ? navigate(`#${path}`) : navigate(path)
                                 }}
-                                // className="text-white font-family-1 font-normal w-fit tracking-wide transition-all duration-700 ease-in-out hover:text-primaryVariantThree"
                                 >{title}
                             </NavLink>
                         ))}

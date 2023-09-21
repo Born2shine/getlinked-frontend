@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { Contact, Home } from "./pages"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
+import { SmoothScroll } from "./components";
 
 const App = () => {
 
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <ToastContainer/>
+      <SmoothScroll/>
     </main>
   )
 }
