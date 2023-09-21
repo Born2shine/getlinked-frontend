@@ -1,12 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { avatarVR, bigIdeaImg, bulb, chain, checkIcon, cicleNetwork, curveLine, fireBoom, gradientBg, illustrationFive, illustrationFour, illustrationOne, illustrationThree, illustrationTwo, plusIcon, starGray, starPurple, starPurpleOne, starWhite } from "../assets"
 import { LensFlare, SpecialText, TimeLabel } from "../atoms"
-import { ArticleTitle, Button, Footer, SingleArticle } from "../components"
+import { ArticleTitle, Button, Footer, SingleArticle, TopNavbar } from "../components"
 import { faqsData, judgingCriteriaData, partnerLogo, rewardsData, timelineData } from "../utils"
 import { Fade, Slide } from "react-awesome-reveal";
 
 const Home = () => {
+    const navigate = useNavigate()
     return (
         <main className="">
+             <TopNavbar />
             <section className="mt-6">
                 <div className="flex justify-center font-semibold md:justify-end md:text-[26px] md:px-[38px] lg:px-[128px]">
                     <div className="relative w-fit">
@@ -45,7 +48,13 @@ const Home = () => {
                                 2023 stand a chance to win a Big prize</Fade>
                         </Fade>
                         <LensFlare extraClass="-top-6 md:-top-[10rem] md:left-[10rem] md:h-48 md:w-44" />
-                        <Fade direction="up" delay={3000} damping={1e-3}><Button title="Register" extraClass="mt-[1.5rem]" /></Fade>
+                        <Fade direction="up" delay={3000} damping={1e-3}>
+                            <Button 
+                                title="Register" 
+                                extraClass="mt-[1.5rem]"
+                                onClick={() => navigate('/register')}
+                             />
+                        </Fade>
                         <div className="flex items-center gap-x-4 justify-center mt-[14.96px] relative md:justify-start md:mt-[77px]">
                             <Fade direction="up" delay={3000}>
                                 <TimeLabel value={'00'} unit="H" />
@@ -128,7 +137,7 @@ const Home = () => {
                 {/* End Rules and Guidelines */}
 
                 {/* Judging Criteria */}
-                <section className="border-b border-b-slate-800">
+                <section className="border-b border-b-slate-800" id="overview">
                     <article className="md:w-[80%] md:mx-auto md:grid md:grid-cols-2 md:gap-x-8 md:items-center py-[62px]">
                         <div className="relative flex justify-center">
                             <Fade direction="left" delay={200}>
@@ -159,7 +168,7 @@ const Home = () => {
                 {/* End Judging Criteria */}
 
                 {/* FAQs */}
-                <section className="border-b border-b-slate-800">
+                <section className="border-b border-b-slate-800" id="faqs">
                     <article className="md:w-[80%] md:mx-auto md:grid md:grid-cols-2 md:gap-x-8 md:items-center py-[62px]">
                         <Fade direction="right" delay={100} className="flex justify-center order-1">
                             <img src={illustrationFour} alt="big-idea-img" className="w-[332px] md:w-[710px]" />
@@ -188,7 +197,7 @@ const Home = () => {
                 {/* End FAQs */}
 
                 {/* Timeline */}
-                <section className="pt-[80px] pb-[62px] mx-10 md:mx-[38px] lg:mx-[128px]">
+                <section className="pt-[80px] pb-[62px] mx-10 md:mx-[38px] lg:mx-[128px]" id="timeline">
                     <Fade direction="up" className="flex flex-col items-center">
                         <span className="text-[20px] font-clashBold md:text-[32px]">Timeline</span>
                         <p className="text-[14px] text-center mx-10 mt-4 mb-[45px] md:mx-0 md:w-[25%]">Here is the breakdown of the time we anticipate using for the upcoming event.</p>

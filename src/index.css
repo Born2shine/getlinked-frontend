@@ -83,6 +83,7 @@
 .font-family-1 {
   font-family: 'Inter', sans-serif;
 }
+
 .font-family-2 {
   font-family: 'Unica One', cursive;
 }
@@ -94,8 +95,33 @@
 
 .gradientTwo {
   background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
-
 }
+
+.text-gradient {
+  background: -webkit-linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Toastify__toast {
+  background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%) !important;
+  color: #fff !important;
+}
+
+.Toastify__toast--error .Toastify__icon {
+  color: white; /* Set the icon color to red or your desired color */
+}
+
+:root {
+  --toastify-color-success: linear-gradient(95.71deg, rgb(161, 34, 120) 4.63%, rgb(201, 28, 111) 82%);
+  color: #ffffff !important;
+}
+
 
 body {
   font-family: 'Montserrat', sans-serif;

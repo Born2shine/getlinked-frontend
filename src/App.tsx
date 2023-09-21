@@ -1,15 +1,17 @@
 import { Route, Routes } from "react-router-dom"
-import { Home } from "./pages"
-import { TopNavbar } from "./components"
+import { Contact, Home } from "./pages"
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
 
   return (
     <main className="h-screen w-screen overflow-x-hidden bg-primaryVariantOne">
-      <TopNavbar />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ToastContainer/>
     </main>
   )
 }

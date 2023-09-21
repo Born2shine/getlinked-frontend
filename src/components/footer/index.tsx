@@ -1,7 +1,7 @@
-import { Logo, SpecialText } from '../../atoms'
-import { contactIcon, mapIcon, starPurple, starWhite } from '../../assets'
-import { homeLinks, socialIcons } from '../../utils'
 import { Link } from 'react-router-dom'
+import { contactIcon, mapIcon, starPurple, starWhite } from '../../assets'
+import { Logo, SocialLinks, SpecialText } from '../../atoms'
+import { homeLinks } from '../../utils'
 
 const index = () => {
     return (
@@ -28,16 +28,7 @@ const index = () => {
                                 </div>
                             ))
                         }
-                        <div className="flex items-center gap-x-4 mt-[12px]">
-                            <SpecialText title='Follow us' extraClass="text-xs" />
-                            <div className="flex items-center gap-x-4">
-                                {
-                                    socialIcons.map(({ id, image }) => (
-                                        <img key={id} src={image} alt="social-icon" />
-                                    ))
-                                }
-                            </div>
-                        </div>
+                        <SocialLinks title='Follow us' extraClass='items-center'/>
                     </div>
 
                     <div className="mt-[32px] relative md:mt-0">
