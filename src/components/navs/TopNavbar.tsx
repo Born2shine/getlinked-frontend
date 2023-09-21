@@ -8,7 +8,6 @@ import { homeLinks } from '../../utils'
 interface IProps {
     showBorderBottom?: boolean
 }
-
 const TopNavbar = ({ showBorderBottom = true }: IProps) => {
     const [showMenubar, setShowMenubar] = useState(false)
     const navigate = useNavigate()
