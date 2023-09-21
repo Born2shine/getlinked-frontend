@@ -1,5 +1,7 @@
-export { default as Button} from "./button"
+export { default as Button} from "./form/button"
 export { default as TopNavbar} from "./navs/TopNavbar"
 export { default as SingleArticle} from "./article/SingleArticle"
 export { default as ArticleTitle} from "./article/ArticleTitle"
 export { default as Footer} from "./footer"
+export { default as GTLInput} from "../components/form/input"
+export { default as GTLTextarea} from "../components/form/textarea"

@@ -10,17 +10,10 @@ export default {
         primaryVariantOne: "#150E28",
         primaryVariantTwo: "#903AFF",
         primaryVariantThree: "#D434FE",
-        // primaryVariantFour: "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
       },
-      animation: {
-        fade: 'fadeOut 2s ease-in-out',
-      },
-      keyframes: theme => ({
-        fadeOut: {
-          '0%': { backgroundColor: theme('colors.primaryVariantOne') },
-          '100%': { backgroundColor: theme('colors.transparent') },
-        },
-      }),
+      boxShadow: {
+        shadowOne: '0px 4px 4px 0px #00000040'
+      }
     },
     fontFamily: {
       clash: ["ClashDisplay-Variable"],

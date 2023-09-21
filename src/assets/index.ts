@@ -36,6 +36,7 @@ import facebookIcon from './icons/facebook-icon.png'
 import linkedinIcon from './icons/linkedin-icon.png'
 import contactIcon from './icons/contact-icon.png'
 import mapIcon from './icons/map-icon.png'
+import arrowLeftIcon from './icons/arrow-back.png'
 
 export {
     menuIcon,
@@ -75,5 +76,6 @@ export {
     facebookIcon,
     linkedinIcon,
     contactIcon,
-    mapIcon
+    mapIcon,
+    arrowLeftIcon
 }
