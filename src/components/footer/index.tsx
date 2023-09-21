@@ -1,9 +1,12 @@
-import { Link } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { contactIcon, mapIcon, starPurple, starWhite } from '../../assets'
 import { Logo, SocialLinks, SpecialText } from '../../atoms'
 import { homeLinks } from '../../utils'
 
 const index = () => {
+    const navigate = useNavigate()
+    const location = useLocation()
+
     return (
         <footer className="bg-[#100B20]">
             <section className="pb-[62px] pt-20 mx-10 md:mx-[38px] lg:mx-[128px]">
@@ -24,11 +27,22 @@ const index = () => {
                         {
                             homeLinks.map(({ id, title, path }) => (
                                 <div key={id} className="flex flex-col mt-[11px]">
-                                    <Link to={path} className="text-sm"> {title} </Link>
+                                    <NavLink
+                                        key={id}
+                                        to={path}
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "text-gradient" : "text-white font-family-1 font-normal w-fit tracking-wide transition-all duration-700 ease-in-out hover:text-primaryVariantThree"
+                                        }
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            (location.pathname === '/contact' && path !== '/contact') ? navigate('/') : path !== '/contact' ? navigate(`#${path}`) : navigate(path)
+                                        }}
+                                    >{title}
+                                    </NavLink>
                                 </div>
                             ))
                         }
-                        <SocialLinks title='Follow us' extraClass='items-center'/>
+                        <SocialLinks title='Follow us' extraClass='items-center' />
                     </div>
 
                     <div className="mt-[32px] relative md:mt-0">

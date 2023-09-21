@@ -32,13 +32,13 @@ const Contact = () => {
             if (res.data) {
                 resetForm()
                 setLoading(false)
-                flashMessage({type: "success", message: 'message sent successfully'})
+                flashMessage({type: "success", message: 'Message sent successfully'})
             }
 
         } catch (error: any) {
             setLoading(false)
             if (error.response.data) {
-                flashMessage({type: "error", message: 'please fill all fields'})
+                flashMessage({type: "error", message: 'Please fill all fields'})
             }
         }
     }
