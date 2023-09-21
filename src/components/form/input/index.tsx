@@ -20,7 +20,7 @@ interface InputProps {
     iconColor?: string
 }
 
-const GTLInput = ({ id, name = '', icon, marginTop, label, value, onChange, onBlur, error, touched = {}, placeholder, type = 'text', extraClass, iconPosition, iconColor, labelExtraClass, style }: InputProps) => {
+const GTLInput = ({ id, name = '', icon, marginTop, label, value, onChange, onBlur, error, touched = {}, placeholder, type = 'text', extraClass, iconPosition, iconColor, labelExtraClass }: InputProps) => {
     return (
         <div className={`${marginTop}`}>
             {label && <label htmlFor={name} className={`${labelExtraClass} text-md text-isGreyVariantSeven mb-1`}>{label}</label>}

@@ -1,7 +1,7 @@
-import { Logo, SocialLinks, SpecialText } from '../../atoms'
-import { contactIcon, mapIcon, starPurple, starWhite } from '../../assets'
-import { homeLinks, socialIcons } from '../../utils'
 import { Link } from 'react-router-dom'
+import { contactIcon, mapIcon, starPurple, starWhite } from '../../assets'
+import { Logo, SocialLinks, SpecialText } from '../../atoms'
+import { homeLinks } from '../../utils'
 
 const index = () => {
     return (

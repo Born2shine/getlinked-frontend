@@ -19,7 +19,7 @@ interface TextAreaProps {
     error?: any,
 }
 
-const GTLTextArea = ({ id, name = '', icon, error, touched = {}, onBlur, marginTop, labelExtraClass, label, value, onChange, placeholder, extraClass, style, col = 30, row = 8 }: TextAreaProps) => {
+const GTLTextArea = ({ id, name = '', error, touched = {}, onBlur, marginTop, labelExtraClass, label, value, onChange, placeholder, extraClass, col = 30, row = 8 }: TextAreaProps) => {
     return (
         <div className={marginTop}>
             {label && <label htmlFor={name} className={`${labelExtraClass} text-md text-isGreyVariantSeven mb-1`}>{label}</label>}

@@ -50,7 +50,7 @@ const Contact = () => {
         first_name: '',
     }
 
-    const { values, errors, touched, handleBlur, handleSubmit, handleChange, resetForm, isSubmitting } = useFormik({
+    const { values, errors, touched, handleBlur, handleSubmit, handleChange, resetForm } = useFormik({
         initialValues: initialValues,
         validationSchema: contactSchema,
         onSubmit: () => contactFormHandler()
