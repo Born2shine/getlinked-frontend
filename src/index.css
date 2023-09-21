@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@300;400;500;600;700&family=Unica+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('./assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('./assets/fonts/ClashDisplay-Extralight.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Extralight.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('./assets/fonts/ClashDisplay-Light.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Light.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('./assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Regular.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('./assets/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Medium.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('./assets/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Semibold.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('./assets/fonts/ClashDisplay-Bold.woff2') format('woff2'),
+    url('./assets/fonts/ClashDisplay-Bold.woff') format('woff'),
+    url('./assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.font-family-1 {
+  font-family: 'Inter', sans-serif;
+}
+.font-family-2 {
+  font-family: 'Unica One', cursive;
+}
+
+.gradientOne {
+  background: linear-gradient(180deg, #903AFF 0%, #FF26B9 100%);
+  border-radius: 50%;
+}
+
+.gradientTwo {
+  background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
