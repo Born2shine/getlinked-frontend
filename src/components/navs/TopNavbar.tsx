@@ -21,7 +21,7 @@ const TopNavbar = ({ showBorderBottom = true }: IProps) => {
                 <img src={menuIcon} alt='menu-icon' className="cursor-pointer md:hidden" onClick={() => setShowMenubar(!showMenubar)} />
                 <div className={`px-[47px] pt-[119px] fixed h-screen w-screen top-0 left-0 bg-primaryVariantOne z-50 transition-all duration-700 ease-in-out ${!showMenubar && '-translate-x-full'} md:transition-none md:translate-x-0 md:h-fit md:w-fit md:relative md:flex md:items-center md:pt-0 md:bg-transparent`}>
                     <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-[50px]">
-                        {homeLinks.map(({ id, title, path, ref }) => (
+                        {homeLinks.map(({ id, title, path }) => (
                             <NavLink
                                 key={id} 
                                 to={path}
