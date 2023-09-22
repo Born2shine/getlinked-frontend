@@ -20,4 +20,4 @@ You can view a live demo of this project [here](https://getlinked-frontend.verce
 
 Include some screenshots or GIFs showcasing your project. You can embed them like this:
 
-![Screenshot 1](https://imgtr.ee/image/6XxCK)
+![Screenshot 1](https://imgtr.ee/images/2023/09/22/f3577abf0dbc8f794eea7ce9c625d320.png)
