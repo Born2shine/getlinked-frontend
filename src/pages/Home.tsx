@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { avatarVR, bigIdeaImg, bulb, chain, checkIcon, cicleNetwork, curveLine, fireBoom, gradientBg, illustrationFive, illustrationFour, illustrationOne, illustrationThree, illustrationTwo, plusIcon, starGray, starPurple, starPurpleOne, starWhite } from "../assets"
+import { avatarVR, bigIdeaImg, bulb, chain, checkIcon, cicleNetwork, curveLine, fireBoom, gradientBg, illustrationFive, illustrationFour, illustrationOne, illustrationThree, illustrationTwo, plusIcon, starGray, starPurple, starPurpleOne, starWhite, wigglyArrow } from "../assets"
 import { LensFlare, SpecialText, TimeLabel } from "../atoms"
 import { ArticleTitle, Button, Footer, SingleArticle, TopNavbar } from "../components"
 import { faqsData, judgingCriteriaData, partnerLogo, rewardsData, timelineData, useCountdown } from "../utils"
@@ -89,6 +89,7 @@ const Home = () => {
                         <div className="relative flex justify-center">
                             <Slide><img src={bigIdeaImg} alt="big-idea-img" className="w-[264px] md:w-[400px]" /></Slide>
                             <img src={starPurple} alt="star-icon" className="w-[12px] animate-pulse absolute left-[4rem] top-[5rem] md:left-[4.5rem] md:top-[7rem] md:w-[16px]" />
+                            <img src={wigglyArrow} alt="wiggly-img" className="w-[19px] h-[22px] absolute -bottom-4 md:w-[52px] md:h-[50px] md:right-16"/>
                         </div>
                         <Fade direction="right" delay={400} damping={1e-1}>
                             <SingleArticle
