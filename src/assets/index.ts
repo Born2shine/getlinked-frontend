@@ -41,6 +41,7 @@ import mapIcon from './icons/map-icon.png'
 import arrowLeftIcon from './icons/arrow-back.png'
 import teamMove from './icons/team-move.png'
 import winkWomanIcon from './icons/wink-emoji-woman.png'
+import wigglyArrow from './images/wiggly-arrow.png'
 
 export {
     menuIcon,
@@ -86,4 +87,5 @@ export {
     arrowLeftIcon,
     teamMove,
     winkWomanIcon,
+    wigglyArrow
 }

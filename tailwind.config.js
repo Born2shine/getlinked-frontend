@@ -13,6 +13,9 @@ export default {
       },
       boxShadow: {
         shadowOne: '0px 4px 4px 0px #00000040'
+      },
+      animation: {
+        'pulse': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       }
     },
     fontFamily: {
