@@ -265,7 +265,7 @@ const Home = () => {
                                     <div key={id} style={{ border: '1px solid', borderColor: borderColor, backgroundColor: bgColor }} className={`w-[90px] h-[125] p-2 rounded-lg text-center pt-12 pb-4 relative md:w-[180px] md:pt-24 md:p-5 ${idx !== 1 && 'mb-3'}`}>
                                         <h3 className="font-medium text-xs md:text-[20px]">{title}</h3>
                                         <h2 className="font-semibold mt-2 text-sm md:text-[24px] md:py-4" style={{ color: borderColor }}>{prize}</h2>
-                                        <img src={image} alt="medal" className={`absolute left-0 right-0 bottom-0 m-auto w-[76px] md:w-[139px] ${idx === 1 ? '-top-48 -left-[1.6rem]  min-w-[138.67px] md:min-w-[235px] md:-top-[19rem] md:-left-7' : '-top-32 md:-top-60'}`} />
+                                        <img src={image} alt="medal" className={`absolute left-0 right-0 bottom-0 m-auto w-[76px] md:w-[139px] ${idx === 1 ? '-top-48 -left-7  min-w-[136px] md:min-w-[235px] md:-top-[19rem] md:-left-7' : '-top-32 md:-top-60'}`} />
                                     </div>
                                 ))}
                             </Fade>
