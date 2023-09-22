@@ -108,7 +108,12 @@
   border: 2px solid transparent;
   border-image: linear-gradient(180deg, #9A39FF 0%, #FF29B9 100%);
   border-image-slice: 1;
-  border-radius: 4px !important;
+  border-radius: 4px;
+  border-image: -moz-linear-gradient(180deg, #9A39FF 0%, #FF29B9 100%);
+  -moz-border-image-slice: 1;
+  -webkit-border-image: -webkit-linear-gradient(180deg, #9A39FF 0%, #FF29B9 100%);
+  -webkit-border-image-slice: 1;
+  -webkit-border-radius: 4px;
 }
 
 html {
