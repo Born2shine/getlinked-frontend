@@ -1,28 +1,23 @@
-# React + TypeScript + Vite
+# Getlinked Hackathon 1.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/your-repo-name/blob/main/LICENSE)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to my Getlinked Hackathon 1.0 Project! I have successfully completed a multifaceted hackathon task, which includes the development of a landing page, a contact page, and a registration page. These pages are not just static, but they come alive with seamless API integration. 
 
-## Expanding the ESLint configuration
+I have leveraged the power of Vite with React for a lightning-fast development experience, and I've styled my project with the elegance and responsiveness of Tailwind CSS. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To showcase my work, I've deployed this project on Vercel, so you can explore it in the demo section below 
 
-- Configure the top-level `parserOptions` property like this:
+This project represents my dedication to creating dynamic web solutions while harnessing the latest technologies. I hope you enjoy exploring it as much as I enjoyed building it!
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Demo
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# getlinked-frontend
+You can view a live demo of this project [here](https://getlinked-frontend.vercel.app/).
+
+## Screenshots
+
+Include some screenshots or GIFs showcasing your project. You can embed them like this:
+
+![Screenshot 1](https://imgtr.ee/image/6XxCK)
