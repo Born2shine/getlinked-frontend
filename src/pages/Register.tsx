@@ -7,9 +7,10 @@ import { illustrationSix, starGray, starPurple, starPurpleOne, starWhite, teamMo
 import { LensFlare, SocialLinks } from '../atoms'
 import { Button, GTLInput, GTLModal, GTLSelect, TopNavbar } from '../components'
 import { flashMessage } from '../utils'
-import { BiCheck } from 'react-icons/bi'
+import { BiCheck, BiChevronLeft } from 'react-icons/bi'
 import { registrationSchema } from '../schema'
 import { Dictionary } from '../types'
+import { Link } from 'react-router-dom'
 
 interface RegisterProps {
     email: string,
@@ -144,11 +145,11 @@ const Register = () => {
                 <TopNavbar showBorderBottom={false} />
             </div>
             <section className="px-10 py-6 md:px-[38px] lg:px-[128px]">
-                {/* <Link to='/' className="relative w-7 h-7 rounded-full gradientOne grid place-content-center cursor-pointer md:hidden" onClick={() => null}> <span className="z-10"><BiChevronLeft /> </span>
+                <Link to='/' className="relative w-7 h-7 rounded-full gradientOne grid place-content-center cursor-pointer md:hidden" onClick={() => null}> <span className="z-10"><BiChevronLeft /> </span>
                     <span className="bg-primaryVariantOne absolute top-0 left-0 right-0 bottom-0 h-[25px] w-[25px] rounded-full z-0 m-auto"></span>
-                </Link> */}
-                <span className="cursor-pointer text-primaryVariantThree font-clashSemibold md:hidden"> Register
-                </span>
+                </Link>
+                {/* <span className="cursor-pointer text-primaryVariantThree font-clashSemibold md:hidden"> Register
+                </span> */}
                 <section className='mt-4'>
                     <article className='relative md:w-[90%] md:mx-auto md:flex md:justify-between'>
                         <img src={starPurple} alt="star-icon" className="hidden w-[16px] animate-pulse absolute md:block md:left-[5rem] md:top-[2rem] md:w-[16px]" />
