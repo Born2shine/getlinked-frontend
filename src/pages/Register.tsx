@@ -151,9 +151,9 @@ const Register = () => {
                 </span>
                 <section className='mt-4'>
                     <article className='relative md:w-[90%] md:mx-auto md:flex md:justify-between'>
-                        <img src={starPurple} alt="star-icon" className="hidden w-[16px] absolute md:block md:left-[5rem] md:top-[2rem] md:w-[16px]" />
+                        <img src={starPurple} alt="star-icon" className="hidden w-[16px] animate-pulse absolute md:block md:left-[5rem] md:top-[2rem] md:w-[16px]" />
 
-                        <img src={starGray} alt="star-icon" className="hidden w-[16px] absolute md:block md:left-[5rem] md:bottom-[10rem] md:w-[16px]" />
+                        <img src={starGray} alt="star-icon" className="hidden w-[16px] animate-pulse absolute md:block md:left-[5rem] md:bottom-[10rem] md:w-[16px]" />
                         <Fade direction='left' delay={200} className='md:block'>
                             <img src={illustrationSix} alt="image" className='w-[70%] mx-auto md:hidden lg:block lg-top-0 lg:w-[1000px]' />
                         </Fade>
@@ -275,13 +275,13 @@ const Register = () => {
                         <LensFlare extraClass="-top-10 -left-8 md:top-[2rem] md:-left-[10rem] md:h-48 md:w-44" />
                         <LensFlare extraClass="hidden md:-bottom-[4rem] md:block md:-right-[7rem] md:h-48 md:w-44" />
 
-                        <img src={starPurpleOne} alt="star-icon" className="w-[16px] absolute right-[1rem] top-[8rem] md:left-[25rem] md:top-[20rem] md:w-[16px]" />
+                        <img src={starPurpleOne} alt="star-icon" className="w-[16px] animate-pulse absolute right-[1rem] top-[8rem] md:left-[25rem] md:top-[20rem] md:w-[16px]" />
 
-                        <img src={starGray} alt="star-icon" className="w-[16px] absolute -left-[1.5rem] top-[23rem] md:left-[55rem] md:top-[1rem] md:w-[16px]" />
+                        <img src={starGray} alt="star-icon" className="w-[16px] animate-pulse absolute -left-[1.5rem] top-[23rem] md:left-[55rem] md:top-[1rem] md:w-[16px]" />
 
-                        <img src={starPurpleOne} alt="star-icon" className="w-[12px] absolute -right-[1rem] bottom-[13rem] md:hidden" />
+                        <img src={starPurpleOne} alt="star-icon" className="w-[12px] animate-pulse absolute -right-[1rem] bottom-[13rem] md:hidden" />
 
-                        <img src={starWhite} alt="star-icon" className="hidden w-[16px] absolute md:block md:right-[4rem] md:-bottom-[1rem] md:w-[12px]" />
+                        <img src={starWhite} alt="star-icon" className="hidden w-[16px] animate-pulse absolute md:block md:right-[4rem] md:-bottom-[1rem] md:w-[12px]" />
                     </article>
                 </section>
                 <footer className='mt-9 md:hidden'>

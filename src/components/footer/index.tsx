@@ -18,7 +18,7 @@ const index = () => {
                             of organizations with the aim of showcasing
                             young and talented individuals in the field
                             of technology
-                            <img src={starWhite} alt="star-icon" className="w-[12px] absolute -left-6 top-10 md:-left-20 md:top-12" />
+                            <img src={starWhite} alt="star-icon" className="w-[12px] animate-pulse absolute -left-6 top-10 md:-left-20 md:top-12" />
                         </p>
                         <p className="mt-4 leading-7 text-[14px] md:mx-0 md:w-[85%] md:text-left">Terms of Use <span className="inline-block border-r-2 border-r-primaryVariantThree h-4 -my-1 mx-2"></span> Privacy Policy</p>
                     </div>
@@ -55,12 +55,12 @@ const index = () => {
                             <img src={mapIcon} alt="contact-icon" />
                             <span className="text-xs leading-5">27,Alara Street <br />Yaba 100012 <br />Lagos State</span>
                         </p>
-                        <img src={starWhite} alt="star-icon" className="w-[12px] absolute -right-16 top-10 md:left-40 md:top-32" />
+                        <img src={starWhite} alt="star-icon" className="w-[12px] animate-pulse absolute -right-16 top-10 md:left-40 md:top-32" />
                     </div>
                 </div>
                 <div className="flex justify-center">
                     <p className="mt-12 text-sm text-center relative w-fit">All rights reserved. <span>&copy;</span> getlinked Ltd.
-                        <img src={starPurple} alt="star-icon" className="absolute left-16 -top-8 md:left-24" />
+                        <img src={starPurple} alt="star-icon" className="absolute animate-pulse left-16 -top-8 md:left-24" />
                     </p>
                 </div>
             </section>
