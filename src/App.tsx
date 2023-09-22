@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { Contact, Home } from "./pages"
+import { Contact, Home, Register } from "./pages"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css";
 import { SmoothScroll } from "./components";
@@ -11,6 +11,7 @@ const App = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <ToastContainer/>
       <SmoothScroll/>

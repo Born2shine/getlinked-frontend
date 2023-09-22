@@ -22,7 +22,7 @@ interface TextAreaProps {
 const GTLTextArea = ({ id, name = '', error, touched = {}, onBlur, marginTop, labelExtraClass, label, value, onChange, placeholder, extraClass, col = 30, row = 8 }: TextAreaProps) => {
     return (
         <div className={marginTop}>
-            {label && <label htmlFor={name} className={`${labelExtraClass} text-md text-isGreyVariantSeven mb-1`}>{label}</label>}
+            {label && <label htmlFor={name} className={`${labelExtraClass} text-[14px] mb-1 block`}>{label}</label>}
             <textarea
                 name={name}
                 value={value}
@@ -31,7 +31,7 @@ const GTLTextArea = ({ id, name = '', error, touched = {}, onBlur, marginTop, la
                 id={id}
                 cols={col}
                 rows={row}
-                className={`${extraClass} border border-[#FFFFFF] w-full block bg-[#FFFFFF08] focus:border-primaryVariantThree p-3 rounded-[4px] shadow-shadowOne placeholder:text-sm focus:outline-none ${touched[name] && error ? 'border-red-400' : ''}`} placeholder={placeholder}></textarea>
+                className={`${extraClass} border border-[#FFFFFF] w-full block bg-[#FFFFFF08] focus:border-primaryVariantThree p-3 px-5 rounded-[4px] shadow-shadowOne placeholder:text-xs placeholder:text-[#FFFFFF40] focus:outline-none ${touched[name] && error ? 'border-red-400' : ''}`} placeholder={placeholder}></textarea>
             {touched[name] && error && <span className='text-xs text-red-400'>{error}</span>}
         </div>
     )

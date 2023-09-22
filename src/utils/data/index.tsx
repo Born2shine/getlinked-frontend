@@ -6,25 +6,21 @@ export const homeLinks = [
         id: 1,
         title: 'Timeline',
         path: 'timeline',
-        ref: '#timeline'
     },
     {
         id: 2,
         title: 'Overview',
         path: 'overview',
-        ref: '#overview'
     },
     {
         id: 3,
         title: 'FAQs',
         path: 'faqs',
-        ref: '#faqs'
     },
     {
         id: 4,
         title: 'Contact',
         path: '/contact',
-        ref: '#contact'
     }
 ]
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from '..'
 import { cancleIcon, menuIcon } from '../../assets'
 import { Logo } from '../../atoms'
@@ -23,16 +23,16 @@ const TopNavbar = ({ showBorderBottom = true }: IProps) => {
                     <div className="flex flex-col gap-y-5 md:flex-row md:gap-x-[50px]">
                         {homeLinks.map(({ id, title, path }) => (
                             <NavLink
-                                key={id} 
+                                key={id}
                                 to={path}
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "text-gradient" : "text-white font-family-1 font-normal w-fit tracking-wide transition-all duration-700 ease-in-out hover:text-primaryVariantThree"
                                 }
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    (location.pathname === '/contact' && path !== '/contact') ? navigate('/') : path !== '/contact' ? navigate(`#${path}`) : navigate(path)
+                                    (location.pathname === '/contact' && path !== '/contact') ? navigate('/') : (location.pathname === '/register' && path !== '/contact') ? navigate('/') : path !== '/contact' ? navigate(`#${path}`) : navigate(path)
                                 }}
-                                >{title}
+                            >{title}
                             </NavLink>
                         ))}
                     </div>
@@ -40,11 +40,17 @@ const TopNavbar = ({ showBorderBottom = true }: IProps) => {
                         <span className="absolute right-[51px] top-[31px] w-7 h-7 rounded-full gradientOne grid place-content-center cursor-pointer md:hidden" onClick={() => setShowMenubar(!showMenubar)}> <img src={cancleIcon} alt='menu-icon' className="z-10" />
                             <span className="bg-primaryVariantOne absolute top-0 left-0 right-0 bottom-0 h-[25px] w-[25px] rounded-full z-0 m-auto"></span>
                         </span>
-                        <Button
-                            title="Register"
-                            extraClass="mt-[29px] md:mt-0 md:ml-[121px]"
-                            onClick={() => navigate('/register')}
-                        />
+                        {
+                            location.pathname !== '/register' &&
+                            <Button
+                                title="Register"
+                                extraClass="mt-[29px] md:mt-0 md:ml-[121px] bg-primaryVariantOne "
+                                onClick={() => navigate('/register')}
+                            />}
+                        {
+                            location.pathname === '/register' &&
+                            <Link to="" className='w-[172px] h-[53px] text-white cursor-pointer border-gradient rounded-[4px] p-3 inline-block text-center ml-10'>Register</Link>
+                        }
 
                     </div>
                 </div>

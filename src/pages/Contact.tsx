@@ -9,6 +9,7 @@ import { useState } from 'react';
 import axios from '../api/axios';
 import { CONTACT } from '../api/constant';
 import { flashMessage } from '../utils';
+import { starGray, starPurple, starPurpleOne, starWhite } from '../assets';
 
 interface ContactProps {
     email: string,
@@ -134,6 +135,14 @@ const Contact = () => {
                         </Slide>
                         <LensFlare extraClass="-top-10 -left-8 md:top-[2rem] md:-left-[10rem] md:h-48 md:w-44" />
                         <LensFlare extraClass="hidden md:-bottom-[4rem] md:block md:-right-[7rem] md:h-48 md:w-44" />
+
+                        <img src={starPurple} alt="star-icon" className="w-[12px] absolute left-[10rem] -top-[2.5rem] md:-left-[1rem] md:-top-[3rem] md:w-[16px]" />
+
+                        <img src={starGray} alt="star-icon" className="w-[16px] absolute right-[1rem] top-[2.5rem] md:right-[6rem] md:-top-[4rem] md:w-[20px]" />
+
+                        <img src={starWhite} alt="star-icon" className="w-[14px] absolute -right-[1.5rem] bottom-[5.5rem] md:-right-[5rem] md:bottom-[.5rem] md:w-[16px]" />
+
+                        <img src={starPurpleOne} alt="star-icon" className="w-[14px] absolute -left-[.5rem] bottom-[1.5rem] md:left-[31rem] md:top-[24rem] md:w-[20px]" />
                     </article>
                 </section>
                 <footer className='mt-9 md:hidden'>
