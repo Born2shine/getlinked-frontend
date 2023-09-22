@@ -91,7 +91,7 @@ const Register = () => {
         } catch (error: any) {
             setLoading(false)
             console.log(error)
-            if (error?.response?.status === 400 && error?.response?.data.email) {
+            if (error?.response?.status === 400 && error?.response?.data?.email) {
                 flashMessage({ type: "error", message: error.response.data.email[0] })
                 return
             }
