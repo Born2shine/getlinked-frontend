@@ -197,7 +197,6 @@ const Register = () => {
                                             touched={touched}
                                             value={values.phone_number}
                                             error={errors.phone_number}
-                                            type='number'
                                         />
                                     </div>
                                     <div className="mt-4 md:grid md:grid-cols-2 md:items-start md:gap-x-8">
