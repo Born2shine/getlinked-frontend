@@ -104,6 +104,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+.border-gradient {
+  border: 2px solid transparent;
+  border-image: linear-gradient(180deg, #9A39FF 0%, #FF29B9 100%);
+  border-image-slice: 1;
+  border-radius: 4px !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -114,7 +121,8 @@ html {
 }
 
 .Toastify__toast--error .Toastify__icon {
-  color: white; /* Set the icon color to red or your desired color */
+  color: white;
+  /* Set the icon color to red or your desired color */
 }
 
 :root {

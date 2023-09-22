@@ -18,6 +18,8 @@ import illustrationTwo from './images/illustration-2.png'
 import illustrationThree from './images/illustration-3.png'
 import illustrationFour from './images/illustration-4.png'
 import illustrationFive from './images/illustration-5.png'
+import illustrationSix from './images/illustration-6.png'
+import illustrationSeven from './images/illustration-7.png'
 import plusIcon from './icons/plus-icon.png'
 import gradientBg from './images/gradient-bg.png'
 import silverMedal from './images/silver_medal.png'
@@ -37,6 +39,8 @@ import linkedinIcon from './icons/linkedin-icon.png'
 import contactIcon from './icons/contact-icon.png'
 import mapIcon from './icons/map-icon.png'
 import arrowLeftIcon from './icons/arrow-back.png'
+import teamMove from './icons/team-move.png'
+import winkWomanIcon from './icons/wink-emoji-woman.png'
 
 export {
     menuIcon,
@@ -58,6 +62,8 @@ export {
     illustrationTwo,
     illustrationThree,
     illustrationFour,
+    illustrationSix,
+    illustrationSeven,
     plusIcon,
     gradientBg,
     silverMedal,
@@ -77,5 +83,7 @@ export {
     linkedinIcon,
     contactIcon,
     mapIcon,
-    arrowLeftIcon
+    arrowLeftIcon,
+    teamMove,
+    winkWomanIcon,
 }
